@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body class="font-['Righteous'] bg-white">
     <div class="wrapper flex flex-col">
@@ -64,23 +65,42 @@
                 </p>
             </div>
         </div>
-
+        <div class="flex flex-col">
+            <h1 class="text-7xl text-black font-['Poppins'] mx-auto my-20">Moon Landing</h1>
+            <div class="mx-auto">
+                <ul class="flex flex-col justify-center items-center">
+                    <li class="flex flex-row"><img src="./img/Moon Launch/Polygon 1.png"></li>
+                    <li class="relative top-[-90px] flex flex-row z-10">
+                        <img src="./img/Moon Launch/Polygon 2.png">
+                        <img src="./img/Moon Launch/Polygon 3.png">
+                    </li>
+                    <li class="relative top-[-180px] flex flex-row">
+                        <img src="./img/Moon Launch/Polygon 4.png">
+                        <img src="./img/Moon Launch/Polygon 5.png">
+                        <img src="./img/Moon Launch/Polygon 6.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!--END OF OUR WORK SECTION-->
         <div class="flex flex-col">
-            <h1 class="text-7xl font-['Poppins'] mx-auto my-24">Our Orbiters</h1>
+            <h1 class="text-7xl text-black font-['Poppins'] mx-auto my-24">Our Orbiters</h1>
             <ul class="flex flex-row mx-auto">
                 <li><img src="./img/Orbiters/img-1.png" alt=""></li>
                 <li><img src="./img/Orbiters/img-2.png" alt=""></li>
                 <li><img src="./img/Orbiters/img-3.png" alt=""></li>
             </ul>
             <!--END OF ORBITERS-->
-            <h1 class="text-7xl font-['Poppins'] mx-auto my-24">Other Projects</h1>
+            <h1 class="text-7xl text-black font-['Poppins'] mx-auto my-12">Other Projects</h1>
             <!--PLACE HOLDER FOR SLIDER-->
-            <ul class="flex flex-row mx-auto">
-                <li><img src="./img/Orbiters/img-1.png" alt=""></li>
-                <li><img src="./img/Orbiters/img-2.png" alt=""></li>
-                <li><img src="./img/Orbiters/img-3.png" alt=""></li>
-            </ul>
+            <div class="projects-slider mx-4 my-6">
+                <div><img src="./img/Projects Slider/img-1.png" class="w-64 h-auto"></div>
+                <div><img src="./img/Projects Slider/img-2.png" class="w-64 h-auto"></div>
+                <div><img src="./img/Projects Slider/img-3.png" class="w-64 h-auto"></div>
+                <div><img src="./img/Projects Slider/img-4.png" class="w-64 h-auto"></div>
+                <div><img src="./img/Projects Slider/img-5.png" class="w-64 h-auto"></div>
+                <div><img src="./img/Projects Slider/img-6.png" class="w-64 h-auto"></div>
+              </div>
         </div>
         <!--END OF PROJECTS SECTION-->
         <div class="bg-[url(./img/Waves/wave-4.png)] bg-no-repeat w-full">
@@ -126,21 +146,23 @@
                         <input type="submit" value="LAUNCH" class="font-['Righteous'] text-white px-10 self-end bg-blue-500 p-2 rounded-full">
                     </form>         
                 </div>
-                <img src="" alt="">
+                <div class="">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=vit%20chennai&t=&z=3&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:600px;}</style></div></div>
+                </div>
             </div>
         </div>
         <!--END OF GET IN TOUCH SECTION-->
         <footer class="bg-[url('./img/Waves/wave-3.png')] bg-no-repeat pt-28 flex flex-row text-white justify-around">
-            <div class="my-auto">
+            <div class="my-auto pb-6">
                 <p class="text-6xl w-[70%] text-center">
                     To Infinity and
                     Beyond !
                 </p>
             </div>
-            <div class="my-auto">
+            <div class="my-auto pb-6">
                 <p class="text-3xl text-center">Mail Us</p>
                 <p class="text-3xl text-center">zbc@space.com</p>
-                <ul class="flex flex-row">
+                <ul class="grid grid-rows-1 grid-cols-5 gap-4">
                     <li><img src="./img/icons/facebook-logo.png" class="h-16 w-16"></li>
                     <li><img src="./img/icons/instagram.png" class="h-16 w-16"></li>
                     <li><img src="./img/icons/discord.png" class="h-16 w-16"></li>
@@ -150,5 +172,18 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+             $('.projects-slider').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 3
+             });
+        });
+
+    </script>
 </body>
 </html>
