@@ -1340,18 +1340,6 @@ html {
   position: relative;
 }
 
-.top-\[-50px\] {
-  top: -50px;
-}
-
-.top-\[-64px\] {
-  top: -64px;
-}
-
-.top-\[-96px\] {
-  top: -96px;
-}
-
 .top-\[-90px\] {
   top: -90px;
 }
@@ -1360,8 +1348,12 @@ html {
   top: -180px;
 }
 
-.top-\[-1800px\] {
-  top: -1800px;
+.top-0 {
+  top: 0px;
+}
+
+.right-1 {
+  right: 0.25rem;
 }
 
 .-z-50 {
@@ -1401,9 +1393,9 @@ html {
   margin-bottom: 2.5rem;
 }
 
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .my-24 {
@@ -1426,17 +1418,16 @@ html {
   margin-right: 3rem;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
 
 .mb-48 {
   margin-bottom: 12rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .flex {
@@ -1491,8 +1482,16 @@ html {
   width: 70%;
 }
 
+.w-\[128px\] {
+  width: 128px;
+}
+
 .w-16 {
   width: 4rem;
+}
+
+.w-\[64px\] {
+  width: 64px;
 }
 
 .max-w-full {
@@ -1561,6 +1560,10 @@ html {
 
 .self-end {
   align-self: flex-end;
+}
+
+.justify-self-end {
+  justify-self: end;
 }
 
 .rounded-full {
